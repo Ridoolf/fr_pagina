@@ -1,0 +1,46 @@
+:root {
+  --ink: #3d3d3d;
+  --ink-muted: #5c5c5c;
+  --sage: #708d63;
+  --sage-dark: #5a7350;
+  --sage-rgb: 112, 141, 99;
+  --rose: #d989b5;
+  --rose-light: #f3dfe8;
+  --rose-rgb: 217, 137, 181;
+  --cream: #f9f9f7;
+  --surface: #fdfcfa;
+  --border: #e8e4df;
+  --white: #ffffff;
+  --error: #c44d4d;
+  --success: #5a8f5a;
+
+  --font-display: 'Source Serif 4', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --font-script: 'Pinyon Script', cursive;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.07);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --touch-min: 48px;
+  --header-height: 64px;
+  --sticky-cta-height: 72px;
+  --max-width: 1100px;
+
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+}

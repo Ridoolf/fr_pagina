@@ -1,0 +1,89 @@
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--radius-full);
+  transition:
+    background-color 220ms var(--ease-out-quart),
+    color 220ms var(--ease-out-quart),
+    border-color 220ms var(--ease-out-quart),
+    box-shadow 280ms var(--ease-out-quart),
+    transform 120ms var(--ease-out-quart);
+}
+
+.whatsapp-btn:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-btn:active,
+  .whatsapp-btn:hover {
+    transform: none;
+  }
+}
+
+.whatsapp-btn--solid {
+  min-height: var(--touch-min);
+  padding: 0 var(--space-6);
+  font-size: 1rem;
+  color: var(--white);
+  background: var(--rose);
+  box-shadow: 0 2px 8px rgba(var(--rose-rgb), 0.2);
+}
+
+.whatsapp-btn--solid:hover {
+  background: #c97aa4;
+  color: var(--white);
+  box-shadow: 0 6px 20px rgba(var(--rose-rgb), 0.38);
+  transform: translateY(-2px);
+}
+
+.whatsapp-btn--inline {
+  margin-top: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.875rem;
+  color: var(--sage-dark);
+  background: var(--white);
+  border: 1.5px solid rgba(var(--sage-rgb), 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.whatsapp-btn--inline:hover {
+  background: rgba(var(--sage-rgb), 0.1);
+  border-color: var(--sage);
+  color: var(--sage-dark);
+  box-shadow: 0 4px 14px rgba(var(--sage-rgb), 0.18);
+  transform: translateY(-1px);
+}
+
+.whatsapp-btn--footer {
+  margin-top: var(--space-3);
+  padding: var(--space-2) var(--space-5);
+  font-size: 0.9375rem;
+  color: var(--sage-dark);
+  background: var(--white);
+  border: 1.5px solid rgba(var(--sage-rgb), 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.whatsapp-btn--footer:hover {
+  background: rgba(var(--sage-rgb), 0.1);
+  border-color: var(--sage);
+  color: var(--sage-dark);
+  box-shadow: 0 4px 14px rgba(var(--sage-rgb), 0.18);
+  transform: translateY(-1px);
+}
+
+.whatsapp-btn--inline svg,
+.whatsapp-btn--footer svg {
+  color: var(--rose);
+}
+
+.whatsapp-btn--solid svg {
+  color: var(--white);
+}
